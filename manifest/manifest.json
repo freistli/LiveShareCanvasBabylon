@@ -1,0 +1,67 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.12/MicrosoftTeams.schema.json",
+    "version": "1.0.8",
+    "manifestVersion": "1.12",
+    "id": "ca5e70ed-1bf0-4225-8a0d-c15432beef29",
+    "packageName": "com.microsoft.teams.liveshareinking",
+    "name": {
+        "short": "LiveShareInking",
+        "full": "Live Share Canvas demo"
+    },
+    "developer": {
+        "name": "contoso",
+        "mpnId": "",
+        "websiteUrl": "https://5020-2404-f801-9000-18-6fec-00-6e5.ap.ngrok.io",
+        "privacyUrl": "https://www.example.com/PrivacyStatement",
+        "termsOfUseUrl": "https://www.example.com/TermsOfUse"
+    },
+    "description": {
+        "short": "Live Share inking demo",
+        "full": "Collaborative inking demo powered by Live Share"
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#FFFFFF",
+    "configurableTabs": [
+        {            
+            "configurationUrl": "https://5020-2404-f801-9000-18-6fec-00-6e5.ap.ngrok.io/?view=config&inTeams=1",
+            "canUpdateConfiguration": false,
+            "scopes": [
+                "groupchat"
+            ],
+            "context": [
+                "meetingSidePanel",
+                "meetingStage"
+            ]
+        }
+    ],
+    "validDomains": [
+        "*.ngrok.io",
+        "x-dev.azurewebsites.net"
+    ],
+    "authorization": {
+        "permissions": {
+            "orgWide": [],
+            "resourceSpecific": [
+                {
+                    "name": "MeetingStage.Write.Chat",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "ChannelMeetingStage.Write.Group",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "LiveShareSession.ReadWrite.Chat",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "LiveShareSession.ReadWrite.Group",
+                    "type": "Delegated"
+                }
+            ]
+        }
+    }
+}
