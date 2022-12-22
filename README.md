@@ -14,12 +14,21 @@ https://user-images.githubusercontent.com/8623897/208295231-b3382580-d61e-4986-a
 
 ## Features
 
-1.	Add features to support multiple Azure Fluid Relay Service switching
+1.	Add features to support different Azure Fluid Relay Service instances choosen (Teams, Secure, InSecure)
 2.	Integrated Fluid UI 
 3.	Integrated Babylon 3D library
 4.	Support to pick up different layers (2D, 3D, Inking)
-5.	Different view operations (Live Share View, Personal View)
-6.	3D models specifically live share operations (switch different models, camera moving, object moving, rotating, scaling)
+5.	Different view operations 
+      - Live Share View
+      - Personal View
+6.	3D models specifically live share operations  
+
+      - Switch different models in shared view
+      - Camera moving in shared view
+      - Object rotating in shared view
+      - Object moving in personal view   
+      - Object & Inking scaling in personal view
+      - Switch Object Animations in personal view
 
 ## Testing Locally in Browser
 
@@ -80,7 +89,7 @@ Your app is ready to be deployed to Azure App Service!
 
 ### Prepare 3D models
 
-The POC has good performance when loading 3D models below 30MB. You can put *.glb directly in the Azure App Service web site folder you deployed in the above step.For example, I put avatar.glb and bee01.glb here: 
+The POC has good performance when loading 3D models below 30MB. You can put your own *.glb directly in the Azure App Service web site folder you deployed in the above step.For example, I put my avatar.glb and bee01.glb here: 
 
 ![image](https://user-images.githubusercontent.com/8623897/205583025-be65934d-d52e-4844-85d7-f8661a966cca.png)
 
