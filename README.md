@@ -8,6 +8,9 @@ Starting from [the simple live canvas demo](https://github.com/microsoft/live-sh
 - `InkingManager`
 - Customized Fluid Relay Service
 
+> Note:
+> LiveCanvs is in preview.
+
 to implement a collaborative inking 2D/3D objects (3D rendering works in Teams Web App with WebGL2, in Teams Desktop App with WebGL) teams meeting extension. It also supports switching different backend Fluid Relay Services. 
 
 
