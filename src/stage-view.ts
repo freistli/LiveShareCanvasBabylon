@@ -248,7 +248,7 @@ export class StageView extends View {
                 const rotateY = (this._container.initialObjects.objRotateY as SharedMap)?.get(objRotateYKey);
                 const objname = (this._container.initialObjects.objName as SharedMap).get(objNameKey) ?? "avatar.glb";
                 
-                SceneLoader.ImportMesh("", "https://fllivesharecanvas-dev.azurewebsites.net/", objname, scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+                SceneLoader.ImportMesh("", window.location.origin+"/", objname, scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
 
                     if (newMeshes) {
                         console.log("load new mesh: "+objname);
@@ -256,7 +256,7 @@ export class StageView extends View {
                         //Scale the model down
                         if (objname.includes('bee'))
                             StageView.glbObj.scaling.scaleInPlace(0.07);
-                        else if (objname.includes('avarar'))
+                        else if (objname.includes('avatar'))
                             StageView.glbObj.scaling.scaleInPlace(2);
                         else
                             StageView.glbObj.scaling.scaleInPlace(1);
